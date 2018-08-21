@@ -1,0 +1,142 @@
+
+<div class="maxIn">
+	<div  class="include" ng-include="'view/templet/edit.html'"></div>
+	<div class="momei">
+		<div class="promptNav">
+			<p>我的任务>c端</p>
+		</div>
+		<p class=""></p>
+	</div>
+	<div class="code">
+		<form  id="taskList" >
+				         	<div>
+				         		<dl>
+					         		<dd>
+						         		时间类型：<label >
+						         		<input type="radio" name="taskTime" value="1"  >
+						         		<span>计划开始时间</span>
+						         		</label>
+					         		</dd>
+					         		<dd><label >
+					         			<input type="radio" name="taskTime" value="2" >
+					         			<span>计划完成时间</span>
+										</label>
+					         		</dd>
+					         		<dd>
+					         			<label >
+					         			<input type="radio" name="taskTime" value="3" >
+					         			<span>实际开始时间</span>
+					         			</label>
+					         		</dd>
+					         		<dd>
+					         			<label >
+					         			<input type="radio" name="taskTime" value="4" >
+					         			<span>实际结束时间</span>
+					         			</label>
+					         		</dd>
+					         		<dd>
+					         			<label >
+					         			<input type="radio" name="taskTime" value="5" >
+					         			<span>发布时间</span>
+					         			</label>
+					         		</dd>
+					         		<dd>
+					         			<div class="sogin">
+						         			<label > &nbsp;&nbsp;&nbsp;进度：</label>
+						         			<select name=""   ng-model="task_statu"  ng-options="o.id as o.name for o in schedule" >
+						         				<option value="" >请选择进度</option>
+						         			</select>
+					         			</div>
+					         		</dd>
+				         		</dl>
+				         	</div>
+				         	<div>
+				         		<dl>
+					         		<dd>
+						         		时间筛选：<label >
+						         		<input type="radio" name="state" value="1" ng-click="thisWeek()">
+						         		<span>本周</span>
+						         		</label>
+					         		</dd>
+					         		<dd>
+					         			<label >
+					         			<input type="radio" name="state" value="2" ng-click="thisMonth()" >
+					         			<span>本月</span>
+					         			</label>
+					         		</dd>
+					         		<dd>
+					         			<label >
+					         			<input type="radio" name="state" value="3" ng-click="ckNull()" ng-checked="alls">
+					         			<span>清空</span>
+					         			</label>
+					         		</dd>
+					         		<dd>
+					         			<p class="timeSel">
+								            <input type="text" autocomplete="off" id="J-x3" value="" readonly="readonly" name="time_start" placeholder="请选择"/><i class="icon iconfont icon-riqi1 iconfontss"></i>
+								            <span> 至 </span>
+								            <input type="text" autocomplete="off" id="J-xl4" value="" readonly="readonly" name="time_end"  placeholder="请选择"/><i class="icon iconfont icon-riqi1 iconfontss"></i>
+					         			</p>
+					         		</dd>
+					         		<dd>
+					         			<div class="sogin">
+					         				<label >搜索：</label>
+					         				<input type="text" value="" autocomplete="off" placeholder="搜索..."  ng-model="taskSearch">
+					         				&nbsp;&nbsp;&nbsp;<button ng-click="search()" >查找</button>
+					         			</div>
+					         		</dd>
+				         		</dl>
+				         		</div>
+				         	<div class="bommit">
+				         		<table width="100%" class="table">  
+						        <thead>  
+						            <tr>  
+						                <th>编号</th>  
+						                <th>优先级</th>
+						                <th>接收时间</th>
+						                <th>需求人</th>
+						                <th>审批编号</th>
+						                <th>类型</th>
+						                <th>任务名称</th>
+						                <th>进度</th>
+						                <th>耗时(天)</th>
+						                <th>计划开始时间</th>
+						                <th>计划完成时间</th>
+						                <th>实际开始时间</th>
+						                <th>实际完成时间</th>
+						                <th>发布时间</th>
+						                <th>备注</th>
+						                <th>操作</th>
+						            </tr>  
+						        </thead>  
+						         <tr ng-repeat="m in myTasks">
+						        	<td>{{m.id}}</td>
+						        	<td>{{m.priority}}</td>
+						        	<td>{{m.time_approve}}</td>
+						        	<td>{{m.applicant}}</td>
+						        	<td>{{m.approve_no}}</td>
+						        	<td>{{m.task_type}}</td>
+						        	<td>{{m.task_name}}</td>
+						        	<td>{{m.task_process}}</td>
+						        	<td>{{m.consume_days}}</td>
+						        	<td>{{m.time_start}}</td>
+						        	<td>{{m.time_end_dev}}</td>
+						        	<td>{{m.time_end_test}}</td>
+						        	<td>{{m.time_release}}</td>
+						        	<td>{{m.remakr}}</td>
+						        	<td>
+						        		<span></span>
+						        		{{m.developer}}</td>
+						        	<td>
+						        		<a href="#/myMissionPlan/{{m.id}}">计划</a>
+						        		<a href="#/taskDetails/{{m.id}}">详情</a>
+						        		<a href="">删除</a>
+						        	</td>
+						        </tr>
+						    </table>
+						    <pagination total-items="total || 1" ng-change="changeList(page.page_index)" ng-model="page.page_index" max-size="5"
+	                            items-per-page="page.page_rows" class="pagination-sm pull-right"
+	                            boundary-links="true"></pagination>
+				         	</div>
+			         	</form>
+	</div>
+</div>

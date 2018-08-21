@@ -1,0 +1,79 @@
+body,li,p{padding:0;margin:0}
+body{color:#555}
+.nias{height:90px;background:#3c4b62;color:#fff;margin-top:-16px;line-height:90px}
+.nias::after{display:block;clear:both;content:''}
+.nias .fix-user{position:relative}
+.nias .userInfo{color:#555;font-size:14px;width:200px;position:absolute;top:70px;left:0;background:#fff;border:1px #ccc solid;z-index:2000;box-shadow:0 0 15px #000}
+.nias .userInfo>ul{padding-bottom:10px}
+.nias .userInfo>ul li{line-height:25px}
+.nias .userInfo>ul li a{color:#e22727}
+.titleCont{font-size:24px;float:left;width:17%;padding:0 3%}
+.navList ul>li{float:left;list-style:none;margin-right:7%}
+.navList ul>li>a{color:#fff;text-decoration:none}
+.navList ul>li>a:hover{text-decoration:underline}
+.momei .promptNav{height:50px;line-height:50px;border-bottom:1px #ccc solid;padding:0 3%}
+.momei>p{height:18px;background:#f2f2f2}
+.code dd{float:left;margin-left:1%;font-size:15px;height:50px;line-height:50px}
+.code dl:after{content:'';display:block;clear:both}
+.code input[type=text]{height:25px;width:200px}
+table{border-collapse:collapse;margin:0 auto;text-align:center;font-size:13px;width:100%}
+table span{cursor:pointer}
+table .span{padding-right:7px;color:#999}
+table td p{padding:0;margin:0}
+table td,table th{border:1px solid #cad9ea;color:#666;padding:12px 0}
+table thead th{background-color:#f4f7fc}
+table tr:nth-child(odd){background:#fff}
+table tr:nth-child(even){background:#f4f7fc}
+table a{font-size:12px;margin-right:8px;color:#e74444;text-decoration:underline}
+table .notStart{color:#fff;background:#e74444;padding:3px 17px;border-radius:15px}
+.nav-active a{border-bottom:4px #e74444 solid;color:#fff!important;display:inline-block;line-height:81px}
+.foumu{position:fixed;top:0;left:0;bottom:0;right:0;z-index:98;outline:0;background:#000;opacity:.2}
+.modal{position:absolute;top:0;left:0;bottom:0;right:0;z-index:99;outline:0}
+.modal .modal_body{width:auto;margin:0 auto;display:table;height:100%;padding:15px 0}
+.modal .modal_content{position:relative;display:table-cell;vertical-align:middle}
+.modal .modal_contentWidth{min-width:300px!important}
+.modal .error{height:22px;display:block;margin-left:93px;padding:1px 0}
+.modal .modal_contents{color:#555;box-shadow:0 0 18px #777;min-width:300px;border-radius:6px;background:#fff;min-height:200px;border-radius:10px;border:1px #ccc solid;padding:0 10px;font-size:15px}
+.modal .modal_contents div{line-height:55px}
+.modal .modal_contents input{height:26px}
+.modal .modal_contents button{padding:6px 20px;border:none;color:#fff;background:#3c4b62;border-radius:4px}
+.modal .modal_contents>div{text-align:center}
+.modal .modal_title{background:#f2f2f2;margin:0 -10px;border-radius:10px 10px 0 0;padding:10px 14px;margin-bottom:15px}
+.modal .modal_title::after{content:"";display:block;clear:both}
+.modal .leftTit{float:left}
+.modal .close{float:right;padding:0 10px;color:#666;font-weight:700;cursor:default}
+.modal .but{text-align:center;padding-bottom:10px}
+.modal a{color:red;text-decoration:underline;font-size:14px}
+.modal .userList{width:450px;padding-right:0}
+.modal .modal_main.addtask div{padding:6px 0;padding-right:5px}
+.modal .radio_right{width:560px;display:inline-block}
+.modal .modal_main form{padding-right:10px}
+.taskDetails{color:#555}
+.taskDetails .but{font-size:18px;letter-spacing:2px;color:#3c4b62;font-weight:500;padding:20px 30px}
+.taskDetails .ctStyle{display:inline-block;max-width:65%;white-space:nowrap}
+.taskDetails .ctLabel{vertical-align:top}
+.taskDetails .amendHistory,.taskDetails .planContent{padding-bottom:30px}
+.taskDetails .taskInfo{padding-bottom:20px;width:100%}
+.taskDetails .taskInfo ul{display:table;width:100%}
+.taskDetails .taskInfo ul li{font-size:14px;width:19.9%;border-right:1px #ccc solid;display:table-cell;word-break:break-all;vertical-align:top}
+.taskDetails .taskInfo ul li p{padding:5px 0;word-break:break-all}
+.taskDetails .taskInfo ul li p label{width:30%;text-align:right;display:inline-block}
+.taskDetails .taskInfo ul li .ctStyle button{min-width:20%;background:#e74444;margin:2px 5px;padding:3px 5px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;float:left}
+.taskDetails .taskInfo ul li .ctL::after{content:"";display:block;clear:both}
+.taskDetails .taskInfo ul li:last-child p label{float:left}
+.taskDetails .taskModel{padding-bottom:30px}
+.taskDetails .planContent::after,.taskDetails .taskInfo::after,.taskDetails .taskModel::after{content:"";display:block;clear:both}
+.taskDetails .edit,.taskDetails .more{text-align:center}
+.taskDetails .more{padding:22px 0}
+.taskDetails .s{border-left:1px #ccc solid;width:1px;height:100%;position:absolute;right:0;top:0}
+.taskDetails .newTask div{padding:8px 0!important}
+.taskDetails .task_title{margin-bottom:0!important}
+.taskDetails .radio_right{display:inline-block;width:710px}
+.taskDetails .radio_right label{text-align:left!important;min-width:80px;padding-right:5px}
+.taskDetails .add a{font-size:14px;color:red;text-decoration:underline}
+.taskDetails .addParticipant label{min-width:100px!important;padding-left:30px}
+.taskDetails .errorInfo{font-size:14px;color:#e74444;padding-left:10px}
+.taskDetails .exceedingLength{display:inline-block;width:70%;vertical-align:text-top}
+.taskDetails .selectTime{color:#e74444}
+.planContent .but{margin:25px 15px}
+.planContent button{padding:8px 20px;border:none;color:#fff;background:#3c4b62;border-radius:4px}

@@ -1,0 +1,51 @@
+<div  class="include" ng-include="'view/templet/edit.html'"></div>
+<div class="planContent">
+  <div class="but">
+    <button >
+      新建计划
+    </button>
+  </div>
+  <div>
+    <table>
+      <thead>
+       <tr>
+        <th>编号</th>
+        <th width="23%">计划名称</th>
+        <th>小组</th>
+        <th width="13%">备注</th>
+        <th>计划人</th>
+        <th>计划时间</th>
+        <th>开始时间</th>
+        <th>完成时间</th>
+        <th>操作</th>
+      </tr>
+      </thead>
+      <tbody>
+        <tr >
+          <td>1</td>
+          <td>计划</td>
+          <td>移动组</td>
+          <td>小明</td>
+          <td>快速开发</td>
+          <td>2018-8-16</td>
+          <td>2018-8-16</td>
+          <td>2018-8-16</td>
+          <td>
+            <a href="">详情</a>
+            <a href="">删除</a>
+          </td>
+        </tr>
+        <tr >
+         <!--  <td colspan="9">
+            暂无计划
+          </td> -->
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <pagination total-items="total || 1" ng-change="changeList(page.page_index)"
+  ng-model="page.page_index" max-size="5" items-per-page="page.page_rows"
+  class="pagination-sm pull-right" boundary-links="true">
+  </pagination>
+</div>
+</div>

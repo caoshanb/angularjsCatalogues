@@ -1,0 +1,40 @@
+
+<div  class="nias">
+	<div class="main" ng-controller="hreders">
+		<div class="titleCont">任务管理工具</div>
+		<div class="navList">
+			<ul>
+				<li ><a href="#/edit/0">我的任务</a></li>
+				<li ><a href="#/view/1">任务总标</a></li>
+				<li ><a href="">小组任务</a></li>
+				<li ><a href="">组员任务</a></li>
+				<li ><a href="">项目</a></li>
+				<li ><a href="">用户管理</a></li>
+			</ul>
+			<div >
+				<div ng-click="fixUser(1)" style="display:inline-block" class="fix-user">
+					小明12
+					<div class="userInfo" ng-show="user">
+						<ul >
+							<li>账号：小明</li>
+							<li>用户：xiaoming</li>
+							<li class="modifyPwd"><a href="javascript:;" ng-click="moyPwd()" >修改密码</a></li>
+							<li class="liBor">&nbsp;</li>
+							<li >
+								<span > 
+									代理人：无
+									<a href="javascript:;" class="cancel" ng-click="showAgents($event)" >设置</a>
+								</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="foumu" ng-show="foumus"  ng-click="close()"></div>
+		<div ng-show="show">
+			<pane></pane>	
+		</div>
+	</div>
+
+</div>

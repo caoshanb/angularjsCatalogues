@@ -1,0 +1,29 @@
+	/*
+	 * 自建弹框插件
+	 */
+	#showAllDark{background: rgba(0, 0, 0, 0.4);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#66000000,endColorstr=#66000000);position: fixed;z-index: 6000;width: 100%;height: 100%; top: 0; left: 0;}
+	#showAllDark>div.insideShowBox{background: #fff;position: absolute;top: 50%;width: 300px;min-height: 160px;margin-top: -80px;left: 50%;margin-left: -150px;padding: 16px 20px;border-radius: 6px;font-size: 16px;font-family: "microsoft yahei";}
+	#showAllDark>div.insideShowBox>.showBoxHerder{margin-bottom: 20px;}
+	#showAllDark>div.insideShowBox>.showBoxHerder>p{text-align: center;color: #3C4B62;font-weight: bold;line-height: 30px;font-size: 20px;}
+	#showAllDark>div.insideShowBox>.showBoxHerder>span{position: absolute;top: 10px;right: 10px;width: 24px;height: 24px;font-size: 18px;text-align: center;background: #3C4B62;color: #fff;border-radius: 4px;font-family: cursive;line-height: 24px;cursor: pointer;}
+	#showAllDark>div.insideShowBox>.showBoxFooter{margin-top:40px;}
+	#showAllDark>div.insideShowBox>.showBoxFooter>span{position: absolute;right: 4px;bottom: 4px;font-size: 12px;font-family: arial;color: #ccc;}
+	#showAllDark>div.insideShowBox>.showBoxFooter>button.btnNormal:first-child{margin-right: 30px;}
+	#showAllDark .btnNormal-long{padding: 7px 22px;border-radius: 4px;border: 0;color: #FFF;background: #3C4B62;}
+
+	#lodingBox{position: fixed;top: 0;left: 0;width: 100%;height: 100%;background: rgba(0,0,0,0.1);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4c000000,endColorstr=#4c000000);-moz-user-select: none;-webkit-user-select: none;-ms-user-select: none;-khtml-user-select: none;user-select: none;z-index: 101;}
+	#lodingBox>img{position: absolute;left: 50%;margin-left: -50px;top: 50%;margin-top: -50px;z-index: 10200;}
+
+	/*
+ * AngularPage默认样式
+ */
+.tablAll{width: 1000px; margin: 0px auto; background: #fff; padding: 30px 0px;}
+.pagination {float: right; margin-right: 5%;border: 1px #ccc solid;border-right: none;font-size: 13px;margin-top: 10px;padding: 0;}
+.pagination>li{border-right: 1px #ccc solid;float: left; padding:0 12px;line-height: 30px;-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; -khtml-user-select: none; user-select: none;list-style: none}
+.tabl1 table{border: 1px solid #ccc; text-align:center;width: 90%; margin: 0px auto;}
+.tablAll table th{line-height: 48px; background: #f2f2f2; font-size: 14px;}
+.tablAll table td{line-height: 46px;font-size: 14px; color: #666;}
+.tablAll table td>a{color: #008EFF;}
+.pagination>li.disabled>a{pointer-events:none;cursor: default;color: #999;text-decoration: none;}
+.pagination>li.active>a{color: #FFF;}
+.pagination>li.active{background: #3C4B62}
